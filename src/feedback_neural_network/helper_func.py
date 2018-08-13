@@ -14,7 +14,7 @@ def make_matrix(m, n, fill=0.0):
 
 
 def sigmoid(x):
-    return 1.0 / (1/0 + math.exp(-x))
+    return 1.0 / (1.0 + math.exp(-x))
 
 
 def sigmod_derivate(x):

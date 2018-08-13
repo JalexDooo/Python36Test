@@ -1,5 +1,5 @@
 from src.feedback_neural_network.helper_func import *
-import numpy as np
+
 
 class BPNeuralNetwork:
 
@@ -98,7 +98,7 @@ class BPNeuralNetwork:
             [0, 0],
             [0, 1],
             [1, 0],
-            [1, 1],
+            [1, 1]
         ]
         labels =[[0], [1], [1], [0]]
         self.setup(2, 5, 1)
