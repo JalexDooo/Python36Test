@@ -92,3 +92,21 @@ class BPNeuralNetwork:
                 case = cases[i]
                 error += self.back_propagate(case, label, learn)
         pass
+
+    def test(self):
+        cases = [
+            [0, 0],
+            [0, 1],
+            [1, 0],
+            [1, 1],
+        ]
+        labels =[[0], [1], [1], [0]]
+        self.setup(2, 5, 1)
+        self.train(cases, labels, 10000, 0.05)
+        for case in cases:
+            print(self.predict(case))
+
+
+if __name__ == '__main__':
+    nn = BPNeuralNetwork()
+    nn.test()
